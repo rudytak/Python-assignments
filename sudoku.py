@@ -42,6 +42,17 @@ class Sudoku:
                 out[i].append(Tile(0, False))
         return out
 
+    def checkBlockInputValidity(self, bs_x,bs_y, val):
+        already_in_block = val in map(lambda x: x.value ,sum(self.blocks[bs_x][bs_y],[]))
+        return not already_in_block
+
+    def checkColumnAndRowValidity(self,x,y,val):
+        arr = self.toSimple()
+        already_in_col = val in arr[y]
+        already_in_row = val in map(lambda b: b[x], arr)
+
+        return not already_in_col and not already_in_row
+
     def input(self, x,y,val, makeConstant = False):
         x=constrain(x,0,self.max_x-1)
         y=constrain(y,0,self.max_y-1)
@@ -52,11 +63,16 @@ class Sudoku:
         b_x = x % self.block_dim[0]
         b_y = y % self.block_dim[1]
 
-        self.blocks[bs_x][bs_y][b_x][b_y].overwrite(val)
+        if(self.checkBlockInputValidity(bs_x,bs_y,val)):
+            if(self.checkColumnAndRowValidity(bs_y*self.block_dim[1]+b_y, bs_x*self.block_dim[0]+b_x,val)):
+                self.blocks[bs_x][bs_y][b_x][b_y].overwrite(val)
+                self.blocks[bs_x][bs_y][b_x][b_y].constant = makeConstant
+            else:
+                print("YOU CANT PLACE THIS VALUE HERE, BECAUSE IT IS ALREADY IN THE ROW OR THE COLLUMN!")
+        else:
+            print("YOU CANT PLACE THIS VALUE IN THIS BLOCK!")
 
-        self.blocks[bs_x][bs_y][b_x][b_y].constant = makeConstant
-
-    def print(self):
+    def toSimple(self):
         arr = self.createEmpty2DArray(self.max_y,self.max_x)
 
         for bs_x, block_col in enumerate(self.blocks):
@@ -64,6 +80,10 @@ class Sudoku:
                 for b_x, col in enumerate(block):
                     for b_y, tile in enumerate(col):
                         arr[bs_y*self.block_dim[1]+b_y][bs_x*self.block_dim[0]+b_x] = tile.value
+        return arr
+
+    def print(self):
+        arr = self.toSimple()
 
         for x,col in enumerate(arr):
             line=""
