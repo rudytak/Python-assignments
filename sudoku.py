@@ -44,7 +44,7 @@ class Sudoku:
         return out
 
     def checkBlockInputValidity(self, bs_x,bs_y, val):
-        already_in_block = val in map(lambda x: x.value ,sum(self.blocks[bs_x][bs_y],[]))
+        already_in_block = val in map(lambda x: x.value, sum(self.blocks[bs_x][bs_y],[]))
         return not already_in_block
 
     def checkColumnAndRowValidity(self,x,y,val):
@@ -57,6 +57,9 @@ class Sudoku:
     def input(self, x,y,val, makeConstant = False, force = False):
         x=constrain(x,0,self.max_x-1)
         y=constrain(y,0,self.max_y-1)
+        if(val <= 0 or val >= 10): 
+            print("error")
+            return
         val=constrain(val,1,self.block_dim[0] * self.block_dim[1])
 
         bs_x = x // self.block_dim[0]
@@ -66,12 +69,12 @@ class Sudoku:
 
         if(force):
             self.blocks[bs_x][bs_y][b_x][b_y].overwrite(val)
-            self.blocks[bs_x][bs_y][b_x][b_y].constant = makeConstant
+            self.blocks[bs_x][bs_y][b_x][b_y].constant = makeConstant or self.blocks[bs_x][bs_y][b_x][b_y].constant
             return
         if(self.checkBlockInputValidity(bs_x,bs_y,val)):
             if(self.checkColumnAndRowValidity(bs_y*self.block_dim[1]+b_y, bs_x*self.block_dim[0]+b_x,val)):
                 self.blocks[bs_x][bs_y][b_x][b_y].overwrite(val)
-                self.blocks[bs_x][bs_y][b_x][b_y].constant = makeConstant
+                self.blocks[bs_x][bs_y][b_x][b_y].constant = makeConstant or self.blocks[bs_x][bs_y][b_x][b_y].constant
             else:
                 print("error")
                 #print("YOU CANT PLACE THIS VALUE HERE, BECAUSE IT IS ALREADY IN THE ROW OR THE COLUMN!")
@@ -143,8 +146,7 @@ def main():
         i = list(map(int, input().split(" ")))
         if(i[0] == -1):
             break
-        print(i[0], i[1], i[2])
+        #print(i[0], i[1], i[2])
         s.input(i[0], i[1], i[2])
 
 main()
-
