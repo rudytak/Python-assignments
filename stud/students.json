@@ -1,0 +1,575 @@
+{
+    "class_name": "36",
+    "students": [
+        {
+            "first_name": "Ernie",
+            "last_name": "Fields",
+            "id": "GXS0",
+            "file_path": "ernie-fields.txt",
+            "marks": [
+                81,
+                91,
+                98,
+                57,
+                52,
+                53,
+                30,
+                26,
+                14,
+                2
+            ],
+            "avg": 50.4
+        },
+        {
+            "first_name": "Leola",
+            "last_name": "Mercado",
+            "id": "GXS1",
+            "file_path": "leola-mercado.txt",
+            "marks": [
+                67,
+                58,
+                5,
+                82,
+                97,
+                7,
+                94,
+                15,
+                71,
+                52
+            ],
+            "avg": 54.8
+        },
+        {
+            "first_name": "Dusty",
+            "last_name": "Dickson",
+            "id": "GXS2",
+            "file_path": "dusty-dickson.txt",
+            "marks": [
+                3,
+                54,
+                71,
+                72,
+                84,
+                13,
+                11,
+                3,
+                76,
+                42
+            ],
+            "avg": 42.9
+        },
+        {
+            "first_name": "Dale",
+            "last_name": "Hurley",
+            "id": "GXS3",
+            "file_path": "dale-hurley.txt",
+            "marks": [
+                95,
+                93,
+                89,
+                61,
+                83,
+                0,
+                4,
+                85,
+                46,
+                50
+            ],
+            "avg": 60.6
+        },
+        {
+            "first_name": "Rosario",
+            "last_name": "Collins",
+            "id": "GXS4",
+            "file_path": "rosario-collins.txt",
+            "marks": [
+                46,
+                11,
+                37,
+                20,
+                15,
+                4,
+                6,
+                93,
+                8,
+                89
+            ],
+            "avg": 32.9
+        },
+        {
+            "first_name": "Megan",
+            "last_name": "Copeland",
+            "id": "GXS5",
+            "file_path": "megan-copeland.txt",
+            "marks": [
+                72,
+                55,
+                21,
+                63,
+                52,
+                41,
+                66,
+                80,
+                98,
+                12
+            ],
+            "avg": 56.0
+        },
+        {
+            "first_name": "Diego",
+            "last_name": "Maddox",
+            "id": "GXS6",
+            "file_path": "diego-maddox.txt",
+            "marks": [
+                28,
+                43,
+                20,
+                13,
+                20,
+                3,
+                61,
+                35,
+                63,
+                86
+            ],
+            "avg": 37.2
+        },
+        {
+            "first_name": "Sidney",
+            "last_name": "Parker",
+            "id": "GXS7",
+            "file_path": "sidney-parker.txt",
+            "marks": [
+                97,
+                58,
+                70,
+                86,
+                8,
+                35,
+                74,
+                53,
+                55,
+                75
+            ],
+            "avg": 61.1
+        },
+        {
+            "first_name": "Kirby",
+            "last_name": "Neal",
+            "id": "GXS8",
+            "file_path": "kirby-neal.txt",
+            "marks": [
+                26,
+                56,
+                70,
+                60,
+                47,
+                78,
+                42,
+                42,
+                8,
+                18
+            ],
+            "avg": 44.7
+        },
+        {
+            "first_name": "Buck",
+            "last_name": "Paul",
+            "id": "GXS9",
+            "file_path": "buck-paul.txt",
+            "marks": [
+                17,
+                49,
+                39,
+                91,
+                59,
+                58,
+                89,
+                54,
+                21,
+                41
+            ],
+            "avg": 51.8
+        },
+        {
+            "first_name": "Dwight",
+            "last_name": "Terrell",
+            "id": "GXS10",
+            "file_path": "dwight-terrell.txt",
+            "marks": [
+                3,
+                16,
+                20,
+                12,
+                69,
+                9,
+                79,
+                14,
+                76,
+                27
+            ],
+            "avg": 32.5
+        },
+        {
+            "first_name": "Marcia",
+            "last_name": "Santiago",
+            "id": "GXS11",
+            "file_path": "marcia-santiago.txt",
+            "marks": [
+                16,
+                4,
+                28,
+                74,
+                33,
+                11,
+                71,
+                28,
+                87,
+                91
+            ],
+            "avg": 44.3
+        },
+        {
+            "first_name": "Lorrie",
+            "last_name": "Boyer",
+            "id": "GXS12",
+            "file_path": "lorrie-boyer.txt",
+            "marks": [
+                59,
+                7,
+                74,
+                44,
+                7,
+                97,
+                27,
+                56,
+                3,
+                33
+            ],
+            "avg": 40.7
+        },
+        {
+            "first_name": "Vanessa",
+            "last_name": "Reilly",
+            "id": "GXS13",
+            "file_path": "vanessa-reilly.txt",
+            "marks": [
+                56,
+                79,
+                42,
+                65,
+                19,
+                34,
+                37,
+                60,
+                29,
+                42
+            ],
+            "avg": 46.3
+        },
+        {
+            "first_name": "Conrad",
+            "last_name": "Harper",
+            "id": "GXS14",
+            "file_path": "conrad-harper.txt",
+            "marks": [
+                64,
+                16,
+                50,
+                33,
+                79,
+                46,
+                47,
+                41,
+                95,
+                10
+            ],
+            "avg": 48.1
+        },
+        {
+            "first_name": "Issac",
+            "last_name": "Davidson",
+            "id": "GXS15",
+            "file_path": "issac-davidson.txt",
+            "marks": [
+                65,
+                37,
+                83,
+                31,
+                76,
+                38,
+                95,
+                70,
+                97,
+                82
+            ],
+            "avg": 67.4
+        },
+        {
+            "first_name": "Deangelo",
+            "last_name": "Gomez",
+            "id": "GXS16",
+            "file_path": "deangelo-gomez.txt",
+            "marks": [
+                15,
+                41,
+                2,
+                50,
+                56,
+                40,
+                66,
+                34,
+                35,
+                90
+            ],
+            "avg": 42.9
+        },
+        {
+            "first_name": "Fred",
+            "last_name": "Gill",
+            "id": "GXS17",
+            "file_path": "fred-gill.txt",
+            "marks": [
+                35,
+                71,
+                33,
+                85,
+                88,
+                46,
+                25,
+                33,
+                90,
+                64
+            ],
+            "avg": 57.0
+        },
+        {
+            "first_name": "Omar",
+            "last_name": "Freeman",
+            "id": "GXS18",
+            "file_path": "omar-freeman.txt",
+            "marks": [
+                23,
+                25,
+                63,
+                87,
+                10,
+                13,
+                17,
+                89,
+                92,
+                33
+            ],
+            "avg": 45.2
+        },
+        {
+            "first_name": "Silvia",
+            "last_name": "Guerrero",
+            "id": "GXS19",
+            "file_path": "silvia-guerrero.txt",
+            "marks": [
+                98,
+                12,
+                35,
+                33,
+                21,
+                94,
+                66,
+                53,
+                84,
+                53
+            ],
+            "avg": 54.9
+        },
+        {
+            "first_name": "Leon",
+            "last_name": "Bautista",
+            "id": "GXS20",
+            "file_path": "leon-bautista.txt",
+            "marks": [
+                47,
+                76,
+                56,
+                76,
+                32,
+                74,
+                59,
+                50,
+                46,
+                15
+            ],
+            "avg": 53.1
+        },
+        {
+            "first_name": "Damien",
+            "last_name": "Turner",
+            "id": "GXS21",
+            "file_path": "damien-turner.txt",
+            "marks": [
+                44,
+                80,
+                6,
+                21,
+                9,
+                84,
+                51,
+                45,
+                62,
+                35
+            ],
+            "avg": 43.7
+        },
+        {
+            "first_name": "Bradford",
+            "last_name": "Berry",
+            "id": "GXS22",
+            "file_path": "bradford-berry.txt",
+            "marks": [
+                15,
+                42,
+                18,
+                14,
+                87,
+                6,
+                93,
+                27,
+                29,
+                53
+            ],
+            "avg": 38.4
+        },
+        {
+            "first_name": "Cameron",
+            "last_name": "Barr",
+            "id": "GXS23",
+            "file_path": "cameron-barr.txt",
+            "marks": [
+                33,
+                72,
+                30,
+                48,
+                52,
+                71,
+                65,
+                34,
+                72,
+                45
+            ],
+            "avg": 52.2
+        },
+        {
+            "first_name": "Geraldine",
+            "last_name": "Villa",
+            "id": "GXS24",
+            "file_path": "geraldine-villa.txt",
+            "marks": [
+                5,
+                84,
+                33,
+                39,
+                18,
+                22,
+                29,
+                66,
+                45,
+                65
+            ],
+            "avg": 40.6
+        },
+        {
+            "first_name": "Joy",
+            "last_name": "Osborn",
+            "id": "GXS25",
+            "file_path": "joy-osborn.txt",
+            "marks": [
+                1,
+                64,
+                64,
+                99,
+                32,
+                30,
+                79,
+                50,
+                86,
+                34
+            ],
+            "avg": 53.9
+        },
+        {
+            "first_name": "Tanisha",
+            "last_name": "Parsons",
+            "id": "GXS26",
+            "file_path": "tanisha-parsons.txt",
+            "marks": [
+                80,
+                13,
+                53,
+                100,
+                52,
+                93,
+                73,
+                87,
+                3,
+                8
+            ],
+            "avg": 56.2
+        },
+        {
+            "first_name": "Otto",
+            "last_name": "Houston",
+            "id": "GXS27",
+            "file_path": "otto-houston.txt",
+            "marks": [
+                12,
+                32,
+                70,
+                86,
+                17,
+                92,
+                0,
+                66,
+                77,
+                20
+            ],
+            "avg": 47.2
+        },
+        {
+            "first_name": "Bobbi",
+            "last_name": "Leonard",
+            "id": "GXS28",
+            "file_path": "bobbi-leonard.txt",
+            "marks": [
+                49,
+                19,
+                76,
+                57,
+                60,
+                18,
+                44,
+                84,
+                51,
+                43
+            ],
+            "avg": 50.1
+        },
+        {
+            "first_name": "Milford",
+            "last_name": "Li",
+            "id": "GXS29",
+            "file_path": "milford-li.txt",
+            "marks": [
+                46,
+                8,
+                24,
+                47,
+                31,
+                53,
+                50,
+                84,
+                77,
+                64
+            ],
+            "avg": 48.4
+        }
+    ]
+}
