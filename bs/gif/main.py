@@ -3,13 +3,14 @@ import random, math
 from tkinter import *  # Python 3
 import imageio
 
-leng = 3
+leng = 30
 
 def turtle_headto(t, x, y):
 	t.left(t.towards(x, y) - t.heading() - 90)
 
 
 def bg(t, col):
+	turtle.clear()
 	t.goto(0, 0)
 	t.penup()
 	t.fillcolor(col)
@@ -26,6 +27,8 @@ t.speed(0)
 t.hideturtle()
 
 for time in range(0, leng):
+	random.seed(10)
+
 	bg(t, "black")
 	t.pen(pencolor="white", pensize="1", fillcolor="white")
 
@@ -38,7 +41,7 @@ for time in range(0, leng):
 
 	for i in range(7):
 
-		a = random.random() * 3.141
+		a = random.random() * 3.141 + i*time/25
 		t.up()
 		t.goto(math.cos(a) * 30 * i, math.sin(a) * 30 * i)
 		turtle_headto(t, 0, 0)
@@ -63,7 +66,7 @@ for time in range(0, leng):
 		t.down()
 
 		for j in range(i):
-			aa = random.random() * 3.141
+			aa = random.random() * 3.141 - j*time/25
 			t.up()
 			t.goto(
 				math.cos(a) * 30 * i + math.cos(aa) * 10 * j,
@@ -76,10 +79,10 @@ for time in range(0, leng):
 	t.penup()
 
 	ts = turtle.getscreen()
-	ts.getcanvas().postscript(file=str(time)+".eps")
+	ts.getcanvas().postscript(file="./"+str(time)+".eps")
 
-images = []
-for i in range(0,leng):
-	images.append(imageio.imread(str(i)+".eps"))
+# images = []
+# for i in range(0,leng):
+# 	images.append(imageio.imread("./"+str(i)+".eps"))
 
-imageio.mimsave('/gif.gif', images)
+# imageio.mimsave('/gif.gif', images)
